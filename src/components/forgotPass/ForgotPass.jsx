@@ -1,7 +1,10 @@
 import React from 'react'
+import Header from '../header/Header'
 
 const ForgotPass = () => {
   return (
+    <>
+    <Header isForgotPage={true}/>
     <div className='form-container'>
         <h1>Forgot Password</h1>
         <form>
@@ -12,6 +15,7 @@ const ForgotPass = () => {
         <p>Don't have an account? <a href="/register">Register</a></p>
       
     </div>
+    </>
   )
 }
 

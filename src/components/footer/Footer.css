@@ -1,0 +1,49 @@
+/* Footer Styles */
+.footer {
+    background-color: rgb(27, 114, 114);
+    color: rgb(237, 234, 234);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer nav li a {
+    color: rgb(237, 234, 234);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effects */
+.footer nav li a:hover {
+    background-color: rgb(237, 234, 234);
+    color: rgb(27, 114, 114);
+}
+
+.footer-copy {
+    margin-top: 2rem;
+    font-size: 14px;
+    opacity: 0.8;
+}

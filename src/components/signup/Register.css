@@ -1,2 +1,24 @@
 
+/* Styling for dropdowns */
+select {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.2s;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: rgb(43, 174, 174);
+    box-shadow: 0 0 5px rgba(43, 174, 174, 0.5);
+  }
+  
+  select:disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+  }
   

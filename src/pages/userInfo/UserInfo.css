@@ -1,0 +1,95 @@
+.user-info-container {
+  /* padding: 30px; */
+  /* max-width: 600px; */
+  margin: auto;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.user-card {
+  background-color: #0C1D2F;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.05);
+}
+
+.info-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #1b3a57;
+  padding-bottom: 8px;
+}
+
+.label {
+  font-weight: 600;
+  /* width: 120px; */
+}
+
+.edit-icon {
+  cursor: pointer;
+  color: #ccc;
+  transition: 0.2s;
+}
+
+.edit-icon:hover {
+  color: #00ffff;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background: #0c1d2f;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+}
+
+.modal input.input-edit {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #1b3a57;
+  background: #041323;
+  color: white;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn.save {
+  background-color: #00ffff;
+  color: #041323;
+}
+
+.btn.cancel {
+  background-color: #333;
+  color: white;
+}

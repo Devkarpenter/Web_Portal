@@ -1,0 +1,52 @@
+#ServiceCard p{
+    color:black;
+}
+
+
+#ServiceCard .card{
+    background-color: #f3f0f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+#ServiceCard:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+#ServiceCard.card-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#ServiceCard .card-text{
+    font-size: 1rem;
+    color: #666;
+}
+
+.text-truncate-multiline {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* change to 2, 3, etc. */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#ServiceCard .card a{
+    text-decoration: none;
+    color: #f8fafc;
+    transition: color 0.3s ease;
+    padding: 5px;
+    background-color: rgb(43, 174, 174);
+    border: 1px solid rgb(43, 174, 174);
+}
+
+
+
+
+  
