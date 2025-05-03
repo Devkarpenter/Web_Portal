@@ -7,6 +7,9 @@ import SignUp from './components/signup/Register';
 import ForgotPass from './components/forgotPass/ForgotPass';
 import Main from './pages/main/Main';
 import DashBoard from './pages/UserDashBoard/DashBoard';
+import Apply from './pages/applyPage/Apply';
+import Admin from '../src/pages/adminDashBoard/Admin'
+
 
 const App = () => {
   return (
@@ -18,6 +21,8 @@ const App = () => {
         <Route path="/forgot-password" element={<ForgotPass />} />
         <Route path='/main' element={<Main />} />
         <Route path='/user-dashboard' element={<DashBoard />} />
+        <Route path='/apply' element={<Apply />} />
+        <Route path='/admin' element={<Admin />} />
       </Routes>
     </Router>
   );

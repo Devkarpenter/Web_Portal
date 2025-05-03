@@ -29,7 +29,7 @@ const Services = () => {
           title={
             <>
               MSME <br />
-              Registration{" "}
+              Registration
             </>
           }
           img="MSME.webp"

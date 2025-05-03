@@ -1,0 +1,123 @@
+.apply-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #0C1D2F;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .apply-left {
+    flex: 1 1 40%;
+    background-color: #041323;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .apply-left img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .apply-right {
+    flex: 1 1 60%;
+    padding: 30px;
+    color: white;
+  }
+  
+  .apply-right h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .apply-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .apply-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+  }
+  
+  .apply-form input,
+  .apply-form textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #1b3a57;
+    background: #041323;
+    color: white;
+    margin-top: 5px;
+  }
+  
+  .apply-form textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .apply-form button {
+    padding: 10px 20px;
+    background-color: #00ffff;
+    border: none;
+    border-radius: 8px;
+    color: #041323;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .apply-form button:hover {
+    background-color: #00e0e0;
+  }
+
+  .service-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .process-info {
+    background-color: #0c1d2f;
+    color: #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  }
+  
+  .process-info h4 {
+    color: #00ffff;
+    margin-bottom: 5px;
+  }
+  
+  .process-info p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .apply-wrapper {
+      flex-direction: column;
+    }
+  
+    .apply-left,
+    .apply-right {
+      flex: 1 1 100%;
+      padding: 20px;
+    }
+  
+    .apply-right h2 {
+      text-align: center;
+    }
+  }
+  

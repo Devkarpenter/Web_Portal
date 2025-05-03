@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './DashBoard.css';
 import Header from '../../components/header/Header';
+// import Footer from '../../components/footer/Footer';
 import Services from '../../components/services/Services';
 import UserInfo from '../userInfo/UserInfo';
 
@@ -52,8 +53,7 @@ const DashBoard = () => {
 
           {activeView === "status" && (
             <>
-              <h1>Service Status</h1>
-              <p>Here you can see the current status of your services.</p>
+              <Services/>
             </>
           )}
 
@@ -64,6 +64,9 @@ const DashBoard = () => {
           )}
         </main>
       </div>
+        
+      {/* <Footer /> */}
+      
     </>
   );
 };

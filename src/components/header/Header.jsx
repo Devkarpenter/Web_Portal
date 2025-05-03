@@ -19,8 +19,8 @@ const Header = ({ isAuthPage, isDashboard,  isForgotPage}) => {
         <ul className="nav-items">
           {isDashboard ? (
             <>
-              <li className='links'><Link to="/about">About Us</Link></li>
-              <li className='links'><Link to="/contact">Contact</Link></li>
+              <li className='links'><Link to="/main">About Us</Link></li>
+              <li className='links'><Link to="/main">Contact</Link></li>
               <Link to="/profile">
                 <img src="ISO-1.webp" alt="" className="user-avatar" />
               </Link>
@@ -39,8 +39,10 @@ const Header = ({ isAuthPage, isDashboard,  isForgotPage}) => {
             </>
           ) : (
             <>
-              <li className='links'><Link to="/login">about</Link></li>
+              <li className='links'><Link to="/login">Login</Link></li>
+              <li className='links'><Link to="/register">Register</Link></li>
               <li className='links'><Link to="/register">Contact</Link></li>
+
             </>
           )
         }

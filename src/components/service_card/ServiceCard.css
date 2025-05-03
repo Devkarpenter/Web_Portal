@@ -31,7 +31,7 @@
 
 .text-truncate-multiline {
     display: -webkit-box;
-    -webkit-line-clamp: 4; /* change to 2, 3, etc. */
+    
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -44,6 +44,11 @@
     padding: 5px;
     background-color: rgb(43, 174, 174);
     border: 1px solid rgb(43, 174, 174);
+}
+
+#ServiceCard .btn{
+    background-color: rgb(43, 174, 174);
+    border: none;
 }
 
 
