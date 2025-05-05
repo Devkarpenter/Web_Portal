@@ -2,13 +2,24 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./ServiceCard.css";
 
+// Define the helper function
+const getPlainText = (jsx) => {
+  if (typeof jsx === 'string') return jsx;
+  if (Array.isArray(jsx?.props?.children)) {
+    return jsx.props.children
+      .map(child => typeof child === 'string' ? child : '')
+      .join(' ');
+  }
+  return typeof jsx?.props?.children === 'string' ? jsx.props.children : '';
+};
+
 const ServiceCard = ({ title, img }) => {
   const navigate = useNavigate();
 
   const handleApply = () => {
     navigate('/apply', {
       state: {
-        title: typeof title === 'string' ? title : title?.props?.children?.join(' '),
+        title: typeof title === 'string' ? title : getPlainText(title),
         img
       }
     });

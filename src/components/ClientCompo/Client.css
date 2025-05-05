@@ -1,0 +1,38 @@
+.client-card {
+    background-color: #2a2a3d;
+    padding: 16px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+  
+  .client-details h4 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+  }
+  
+  .client-details p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .remove-btn {
+    background-color: #e74c3c;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c0392b;
+  }
+  

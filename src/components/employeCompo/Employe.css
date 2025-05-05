@@ -1,0 +1,45 @@
+.employee-card {
+    background-color: #0C1D2F;
+    color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  
+  .employee-info h4 {
+    margin: 0;
+  }
+  
+  .employee-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #d1d1d1;
+  }
+  
+  .role-badge {
+    background-color: #1B7272;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: inline-block;
+  }
+  
+  .remove-btn {
+    background-color: #D9534F;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .remove-btn:hover {
+    background-color: #C9302C;
+  }
+  

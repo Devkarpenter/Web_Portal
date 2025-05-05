@@ -1,8 +1,10 @@
+// src/pages/operation/OperationDashboard.jsx
+
 import React, { useState } from 'react';
 import Header from '../../components/header/Header';
-import './Admin.css';
+import '../adminDashBoard/Admin.css'; // ✅ Reuse the same CSS
 
-const AdminDashboard = () => {
+const OperationDashboard = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -18,15 +20,15 @@ const AdminDashboard = () => {
 
         <aside className="sidebar">
           <ul>
-            <li><a href="/admin/employees">👤 Manage Users</a></li>
-            <li><a href="/admin/clients">🏫 Manage Clients</a></li>
-            <li><a href="/admin/requests">📬 Review Requests</a></li>
-            <li><a href="/logout">🚪 Logout</a></li>
+            <li><a href="/operation/applications">📂 View Applications</a></li>
+            <li><a href="/operation/tasks">🛠️ Assign Tasks</a></li>
+            <li><a href="/operation/status">📊 Track Progress</a></li>
+            <li><a href="/login">🚪 Logout</a></li>
           </ul>
         </aside>
 
         <main className="dashboard-content">
-          <h1>Welcome, Admin!</h1>
+          <h1>Welcome, Operations!</h1>
           <p>Select a menu option from the sidebar.</p>
         </main>
       </div>
@@ -34,4 +36,4 @@ const AdminDashboard = () => {
   );
 };
 
-export default AdminDashboard;
+export default OperationDashboard;
