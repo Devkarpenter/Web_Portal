@@ -1,0 +1,47 @@
+.review-requests-container {
+  padding: 2rem;
+}
+
+.request-list {
+  list-style: none;
+  padding: 0;
+}
+
+.request-card {
+  background: #1B7272;
+  color: white;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.actions button:first-child {
+  background-color: #4caf50;
+  color: white;
+}
+
+.actions button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+.request-card.approved {
+  border-left: 6px solid #4caf50;
+}
+
+.request-card.rejected {
+  border-left: 6px solid #f44336;
+}

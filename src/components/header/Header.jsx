@@ -28,7 +28,8 @@ const Header = ({ isAuthPage, isDashboard,  isForgotPage}) => {
           ) : isAuthPage ? (
             <>
               <li className='links'><Link to="/login">Login</Link></li>
-              <li className='links'><Link to="/register">Register</Link></li>
+              {/* <li className='links'><Link to="/register">Register</Link></li> */}
+              <li className='links'><Link to="/">Contact</Link></li>
             </>
 
           ) : isForgotPage ? (
@@ -39,9 +40,9 @@ const Header = ({ isAuthPage, isDashboard,  isForgotPage}) => {
             </>
           ) : (
             <>
-              <li className='links'><Link to="/login">Login</Link></li>
+              {/* <li className='links'><Link to="/login">Login</Link></li> */}
               <li className='links'><Link to="/register">Register</Link></li>
-              <li className='links'><Link to="/register">Contact</Link></li>
+              <li className='links'><Link to="/">Contact</Link></li>
 
             </>
           )

@@ -11,6 +11,7 @@ import Admin from './pages/adminDashBoard/Admin';
 import OperationDashboard from './pages/OperationDashBoard/OperationDashBoard';
 import ManageEmploye from './pages/ManageEmploye/ManageEmploye' // ✅ New import
 import ManageClient from './pages/ManageClient/ManageClient';
+import ReviewRequests from './pages/ReviewRequest/ReviewRequest'; // ✅ New import
 
 const App = () => {
   return (
@@ -28,6 +29,8 @@ const App = () => {
         <Route path="/operation" element={<OperationDashboard />} />
         <Route path="/admin/employees" element={<ManageEmploye />} /> {/* ✅ New Route */}
         <Route path="/admin/clients" element={<ManageClient />} /> {/* ✅ New Route */}
+        <Route path="/admin/requests" element={<ReviewRequests />} />
+        <Route path="/operation/requests" element={<ReviewRequests />} /> {/* ✅ New Route */}
         
       </Routes>
     </Router>
