@@ -1,47 +1,70 @@
 .review-requests-container {
   padding: 2rem;
+  background-color: #041323;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .request-list {
   list-style: none;
   padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 .request-card {
-  background: #1B7272;
-  color: white;
-  border: 1px solid #ddd;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  background: linear-gradient(145deg, #1B7272, #155c5c);
+  color: #fff;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.request-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
 }
 
 .actions button {
-  margin-left: 10px;
-  padding: 6px 12px;
+  padding: 8px 16px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.actions button:hover {
+  transform: scale(1.05);
 }
 
 .actions button:first-child {
-  background-color: #4caf50;
+  background-color: #45b36b;
   color: white;
 }
 
 .actions button:last-child {
-  background-color: #f44336;
+  background-color: #e74c3c;
   color: white;
 }
 
 .request-card.approved {
-  border-left: 6px solid #4caf50;
+  border-left: 8px solid #45b36b;
+  background: linear-gradient(145deg, #1b8c6d, #137a63);
 }
 
 .request-card.rejected {
-  border-left: 6px solid #f44336;
+  border-left: 8px solid #e74c3c;
+  background: linear-gradient(145deg, #c0392b, #962d22);
 }

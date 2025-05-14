@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './components/login/Login';
 import SignUp from './components/signup/Register';
 import ForgotPass from './components/forgotPass/ForgotPass';
@@ -9,13 +9,15 @@ import DashBoard from './pages/UserDashBoard/DashBoard';
 import Apply from './pages/applyPage/Apply';
 import Admin from './pages/adminDashBoard/Admin';
 import OperationDashboard from './pages/OperationDashBoard/OperationDashBoard';
-import ManageEmploye from './pages/ManageEmploye/ManageEmploye' // ✅ New import
+import ManageEmploye from './pages/ManageEmploye/ManageEmploye';
 import ManageClient from './pages/ManageClient/ManageClient';
-import ReviewRequests from './pages/ReviewRequest/ReviewRequest'; // ✅ New import
+import ReviewRequests from './pages/ReviewRequest/ReviewRequest';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/login" element={<Login />} />
@@ -23,17 +25,15 @@ const App = () => {
         <Route path="/forgot-password" element={<ForgotPass />} />
         <Route path="/main" element={<Main />} />
         <Route path="/user-dashboard" element={<DashBoard />} />
-        {/* <Route path="/user-dashboard/apply" element={<DashBoard />} /> */}
         <Route path="/apply" element={<Apply />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/operation" element={<OperationDashboard />} />
-        <Route path="/admin/employees" element={<ManageEmploye />} /> {/* ✅ New Route */}
-        <Route path="/admin/clients" element={<ManageClient />} /> {/* ✅ New Route */}
+        <Route path="/admin/employees" element={<ManageEmploye />} />
+        <Route path="/admin/clients" element={<ManageClient />} />
         <Route path="/admin/requests" element={<ReviewRequests />} />
-        <Route path="/operation/requests" element={<ReviewRequests />} /> {/* ✅ New Route */}
-        
+        <Route path="/operation/requests" element={<ReviewRequests />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 };
 

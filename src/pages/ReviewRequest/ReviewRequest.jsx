@@ -36,7 +36,7 @@ const ReviewRequest = () => {
 
   return (
     <div className="review-requests-container">
-      <h2>Review Requests</h2>
+      {/* <h2>Review Requests</h2> */}
       {requests.length === 0 ? (
         <p>No requests found.</p>
       ) : (
